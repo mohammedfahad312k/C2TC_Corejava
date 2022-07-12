@@ -18,7 +18,7 @@ public class StudentDetails {
 	
 	System.out.println("name is: "+name);
 	System.out.println("age of "+name+" is: "+age);
-	System.out.println("the marks obvtain "+name+" is in java and python:" +marks1 , marks2);
+	System.out.println("the marks obtain "+name+" is in java and python:" +marks1);
 	}
 
 }

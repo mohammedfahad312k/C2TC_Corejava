@@ -25,9 +25,16 @@ public static void main(String[] args) throws SQLException {
 		{
 			Connection connection =DBUtil.getconnection();
 			Statement stmt = connection.createStatement();
-			String sqlinsert = "insert into employee(name,salary,bonus)" + "values('kapil',50000.00,900.00)";
+			String sqlinsert = "insert into employee(name,salary,bonus)" + "values('kapil',50000.00,300.00)";
+			String sqlinsert1 = "insert into employee(name,salary,bonus)" + "values('akash',60000.00,200.00)";
+			String sqlinsert2 = "insert into employee(name,salary,bonus)" + "values('rajkumar',70000.00,500.00)";
+			String sqlinsert3 = "insert into employee(name,salary,bonus)" + "values('manhor',80000.00,600.00)";
 			int executeupdate = stmt.executeUpdate(sqlinsert);
-			if(executeupdate==1) {
+			int executeupdate1 = stmt.executeUpdate(sqlinsert1);
+			int executeupdate2= stmt.executeUpdate(sqlinsert2);
+			int executeupdate3 = stmt.executeUpdate(sqlinsert3);
+			if(executeupdate==1&&executeupdate2==1 &&executeupdate3==1 ) {
+				
 				System.out.println("Entry is added");
 			}
 		}

@@ -25,7 +25,7 @@ public static void main(String[] args) throws SQLException {
 		{
 			Connection connection =DBUtil.getconnection();
 			Statement stmt = connection.createStatement();
-			String sqlinsert = "insert into employee(name,salary,bonus)" + "values('kapil',5000.00,900.00)";
+			String sqlinsert = "insert into employee(name,salary,bonus)" + "values('kapil',50000.00,900.00)";
 			int executeupdate = stmt.executeUpdate(sqlinsert);
 			if(executeupdate==1) {
 				System.out.println("Entry is added");
@@ -36,7 +36,7 @@ public static void main(String[] args) throws SQLException {
 		{
 			Connection connection =DBUtil.getconnection();
 			Statement stmt = connection.createStatement();
-			String sqlupdate = "update employee set bonus =100.00 where id=4";
+			String sqlupdate = "update employee set bonus =1000.00 where id=4";
 			int executeupdate = stmt.executeUpdate(sqlupdate);
 			if(executeupdate==1) {
 				System.out.println("Update is successfull");
